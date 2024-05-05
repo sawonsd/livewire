@@ -21,25 +21,25 @@
 <body class=" bg-surface">
 	<main>
 		<!--start the project-->
-		<div id="main-wrapper" class=" flex p-5 xl:pr-0">
+		<div id="main-wrapper" class="flex p-5 xl:pr-0">
 
             @include('livewire.layouts.sidebar')
 
-			<div class=" w-full page-wrapper xl:px-6 px-0">
+			<div class="w-full px-0 page-wrapper xl:px-6">
 
 				<!-- Main Content -->
-				
+
 
                 {{ $slot }}
 
-				
+
 			</div>
 		</div>
 		<!--end of project-->
 	</main>
 
 
-	
+
 <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
 <script src="./assets/libs/simplebar/dist/simplebar.min.js"></script>
 <script src="./assets/libs/iconify-icon/dist/iconify-icon.min.js"></script>
@@ -49,6 +49,9 @@
 <script src="./assets/libs/apexcharts/dist/apexcharts.min.js"></script>
 <script src="./assets/js/dashboard.js"></script>
 @livewireScripts
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@stack('js')
 </body>
 
 </html>
